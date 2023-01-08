@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <title>Shiny Pokemon Counter</title>
+</head>
+<body>
+  <h1>Shiny Pokemon Count: <span id="count">0</span></h1>
+  <button onclick="incrementCount(1)">+1</button>
+  <button onclick="incrementCount(5)">+5</button>
+
+  <script>
+    function incrementCount(n) {
+      const countElement = document.getElementById('count');
+      const currentCount = parseInt(countElement.innerText, 10);
+      countElement.innerText = currentCount + n;
+    }
+  </script>
+</body>
+</html>
